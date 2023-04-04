@@ -1,10 +1,32 @@
-*, *::before, *::after {
+/* *, *::before, *::after {
   box-sizing: border-box;
 }
-
+ */
 
 .caroImages{
   height: 300px;
   object-fit: cover;
   width: 100%;
+}
+
+.signinborder{
+  margin-left: 1rem;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+.imgmovie{
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+footer{
+  margin: 0;
+  background-color: black;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  padding: .5rem;
 }
