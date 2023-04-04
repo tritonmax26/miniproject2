@@ -1,5 +1,5 @@
-import Hero from "../Components/Hero"
-import Search from "../Components/Search"
+import Hero from "../components/Hero"
+import Search from "../components/Search"
 
 
 const Home = () => {

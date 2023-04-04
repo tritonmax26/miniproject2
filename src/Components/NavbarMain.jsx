@@ -1,12 +1,21 @@
 import { Container ,Nav ,Navbar , NavDropdown} from 'react-bootstrap';
 import { NavLink } from "react-router-dom"
+import logo from "../assets/logo.jpg"
 
 const NavbarMain = () => {
   return (
  <div>
     <Navbar bg="dark" variant='dark' expand="lg">
       <Container>
-        <Navbar.Brand >Movies for Junkies</Navbar.Brand>
+        <Navbar.Brand>
+          <img src= {logo}
+              width="30"
+              height="30"
+              className="d-inline-flex align-top minilogo"
+              alt="React Bootstrap logo">
+          </img>
+          Movies for Junkies
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
