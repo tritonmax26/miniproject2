@@ -1,19 +1,14 @@
-// import About from '../components/About'
-// import Contact from '../components/Contact'
-// import Hero from '../components/Hero'
-// import Projects from '../components/Projects'
-// import Footer from "../components/Footer"
+import Hero from "../Components/Hero"
+import Search from "../Components/Search"
 
-// const Home = () => {
-//   return (
-//     <>
-//       <Hero></Hero>
-//       <About></About>
-//       <Projects></Projects>
-//       <Contact></Contact>
-//       <Footer></Footer>
-//     </>
-//   )
-// }
 
-// export default Home
+const Home = () => {
+  return (
+    <div>        
+        <Hero/> 
+        <Search/>
+    </div>
+  )
+}
+
+export default Home

@@ -1,20 +1,20 @@
-// import Home from "./views/Home"
-// import About from "./views/About"
-// import Contactus from "./views/Contactus"
+import Home from "./views/Home"
+import Movies from "./views/Movies"
+import Contact from "./views/Contact"
 
-// const routes = [
-//   {
-//     path: "/",
-//     element: <Home />
-//   },
-//   {
-//     path: "/about",
-//     element: <About />
-//   },
-//   {
-//     path: "/contact",
-//     element: <Contactus />
-//   }
-// ]
+const routes = [
+  {
+    path: "/",
+    element: <Home />
+  },
+  {
+    path: "/movies",
+    element: <Movies />
+  },
+  {
+    path: "/contact",
+    element: <Contact />
+  }
+]
 
-// export default routes
+export default routes

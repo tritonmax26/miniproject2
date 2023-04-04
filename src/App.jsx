@@ -1,16 +1,20 @@
+import React from "react"
+import { Routes, Route } from "react-router-dom"
+import routes from "./routes"
 import NavbarMain from "./components/NavbarMain"
-import Hero from "./Components/Hero"
-import Search from "./Components/Search"
-import Footer from "./Components/Footer"
+import Footer from "./components/Footer"
 
 
 const App = () => {
   return (
     <div>
-        <NavbarMain/>        
-        <Hero/> 
-        <Search/>
-        <Footer/>        
+      <NavbarMain/>      
+        <Routes>
+        {routes.map((route, index) => {
+          return <Route key={index} path={route.path} element={route.element} exact />
+        })}
+        </Routes>
+      <Footer/>
     </div>
   )
 }

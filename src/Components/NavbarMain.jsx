@@ -1,27 +1,25 @@
 import { Container ,Nav ,Navbar , NavDropdown} from 'react-bootstrap';
+import { NavLink } from "react-router-dom"
 
 const NavbarMain = () => {
   return (
  <div>
     <Navbar bg="dark" variant='dark' expand="lg">
       <Container>
-        <Navbar.Brand >Main Page</Navbar.Brand>
+        <Navbar.Brand >Movies for Junkies</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link >Home</Nav.Link>
-            <Nav.Link >Sign Up</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+          <Nav>
+            <NavLink to="/" end>Home</NavLink>
+            <NavLink to="/movies" end>Movies</NavLink>
+            <NavLink to="/contact" end>Contact</NavLink>
+            {/* <NavDropdown title="More Info" id="basic-nav-dropdown">
               <NavDropdown.Item >Action</NavDropdown.Item>
               <NavDropdown.Item >
-                Another action
+                bla bla bla
               </NavDropdown.Item>
-              <NavDropdown.Item >Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item >
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+              <NavDropdown.Item >Premium</NavDropdown.Item>                         
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
