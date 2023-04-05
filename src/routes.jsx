@@ -1,6 +1,7 @@
 import Home from "./views/Home"
 import Movies from "./views/Movies"
 import Contact from "./views/Contact"
+import SearchMovie from "./views/SearchMovie"
 
 const routes = [
   {
@@ -14,7 +15,12 @@ const routes = [
   {
     path: "/contact",
     element: <Contact />
+  },
+  {
+    path: "/searchmovie",
+    element: <SearchMovie />
   }
+
 ]
 
 export default routes

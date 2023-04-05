@@ -21,6 +21,7 @@ const NavbarMain = () => {
           <Nav>
             <NavLink to="/" end>Home</NavLink>
             <NavLink to="/movies" end>Movies</NavLink>
+            <NavLink to="/searchmovie" end>Search Movie</NavLink>
             <NavLink to="/contact" end>Contact</NavLink>
             {/* <NavDropdown title="More Info" id="basic-nav-dropdown">
               <NavDropdown.Item >Action</NavDropdown.Item>
