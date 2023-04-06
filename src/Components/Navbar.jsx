@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function searchnavbar({ onSearch }) {
+function Navbar({ onSearch }) {
   const [searchText, setSearchText] = useState('');
 
   const handleSearch = () => {
@@ -18,19 +18,23 @@ function searchnavbar({ onSearch }) {
   };
 
   return (
-    <nav className="navbar">
+  
+    <nav className="navbarSearch">
+      <h3>Search Movie</h3>
       <div className="search">
-        <input
+        <input>
           type="text"
           placeholder="Search for movies"
           value={searchText}
           onChange={handleSearchChange}
           onKeyUp={handleKeyPress}
-        />
-        <button onClick={handleSearch}>Search</button>
+          </input>
+        <button onClick={handleSearch}>
+          Search
+        </button>
       </div>
-    </nav>
+    </nav>    
   );
 }
 
-export default searchnavbar
+export default Navbar

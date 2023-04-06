@@ -4,7 +4,7 @@ import MovieComponent from '../components/moviecompo'
 
 const SearchMovie = () => {
   return (
-    <div>   
+    <div>        
         <MovieComponent/>
     </div>
   )

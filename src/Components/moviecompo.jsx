@@ -43,11 +43,12 @@ function MovieComponent() {
     return <div>Error: {error.message}</div>;
   }
   if (movies.length > 0) {
-    return (
-      <div>
+  return (
+    <div>
         <div className='navbarmovie'>
+          <div>
           <Navbar onSearch={handleSearch} />
-        
+          </div>
         <h2>Movie List</h2>
         </div>
         <div className="movie-container">
@@ -59,12 +60,9 @@ function MovieComponent() {
             </div>
           ))}
         </div>
-      </div>
+    </div>   
     );
   }
   return <Navbar onSearch={handleSearch} />;
 }
-
-  
-
   export default MovieComponent

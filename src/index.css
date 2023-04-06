@@ -1,3 +1,9 @@
+/* body {
+  background-image: url(../src/assets/189745955_l_normal_none.jpg);
+  background-size: cover;
+  background-attachment: fixed;  
+} */
+
 .navbar a.active {
   color: rgb(74, 190, 219);   
 }
@@ -36,15 +42,58 @@
   margin: 1rem;
   border: 5px solid black;
   border-radius: 20px;
-  position: relative;
-  
+  position: relative;  
+}
+section {
+  flex-wrap: wrap;
+  align-content: center;
+}
+.cardscontainer{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  align-items: flex-start;
 }
 
-body {
-  background-image: url(../src/assets/189745955_l_normal_none.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+.formBackground{
+background-image: url(./assets/formbackground.jpg);
+background-size: cover;
+background-attachment: fixed;
+height: 100vh;
+justify-content: center;
+align-items: center;
 }
+
+.formContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: x-large;  
+}
+.formwidth{
+  border: dotted 5px rgb(196, 16, 16);
+  width: 600px;
+  margin: 10rem;
+  background-color: rgb(240, 248, 255, 100);
+  
+}
+.container{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.card{
+  display: block;
+  margin: 10px;
+}
+
+.img{
+  height: 15rem;
+  width: 100%;
+}
+
 .navbarmovie{
   /* display: flex; */
   justify-content: center;
@@ -54,14 +103,20 @@ body {
 }
 
 
-.navbar {
+.navbarSearch {
   background-color: #282c34;
-  color: white;
+  background-image: url(../src/assets/189745955_l_normal_none.jpg);
+  background-size: cover;
+  background-attachment: inherit;
+  background-repeat: no-repeat; 
+  color: rgb(0, 0, 0);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center; 
-  height: 80px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  padding: 20px;
+  
 }
 
 .search {
@@ -88,6 +143,17 @@ button {
   color: white;
   cursor: pointer;
   font-size: 16px;
+}
+
+.movieCompoBackground{
+  
+  background-image: url(./assets/Banner1.jpg);
+  background-size: cover;
+  background-attachment: fixed; 
+  height: 100vh; 
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .movie-container {
@@ -121,12 +187,6 @@ button {
   font-size: 1.2rem;
   color: rgb(255, 62, 62);
 }
-
-
-
-
-
-
 
 footer{
   background-color: black;
