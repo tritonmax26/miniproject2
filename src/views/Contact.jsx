@@ -11,7 +11,7 @@ const Contact = () => {
               <Form.Label>Email address</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
               <Form.Text>
-                We'll email you as soon as we can.
+                
               </Form.Text>
             </Form.Group>
 
