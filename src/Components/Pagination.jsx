@@ -10,7 +10,7 @@ useEffect (() => {
   async function getPages() {
     const res = await http.get("/titles?page=")
     setPages(res.data)
-    console.log(res.data)
+    // console.log(res.data)
     
   }
   getPages ()
