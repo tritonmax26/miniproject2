@@ -4,7 +4,7 @@ import banner1 from "../assets/HS1.jpg"
 import banner2 from "../assets/HS2.jpg"
 import banner3 from "../assets/HS3.jpg"
 
-const Hero = () => {
+const SearchHero = () => {
   return (
     <div>
     <Carousel className= "karo">
@@ -50,4 +50,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default SearchHero

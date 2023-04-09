@@ -1,12 +1,12 @@
 import React from 'react'
-import Herobanner from '../Components/SearchHero'
+import SearchHero from '../Components/SearchHero'
 import MovieComponent from '../components/moviecompo'
 
 
 const SearchMovie = () => {
   return (
     <div>
-      <Herobanner />
+      <SearchHero />
       <MovieComponent/>
     </div>
   )
