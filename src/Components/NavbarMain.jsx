@@ -12,7 +12,7 @@ const NavbarMain = () => {
               width="30"
               height="30"
               className="d-inline-flex align-top minilogo"
-              alt="React Bootstrap logo">
+              >
           </img>
           Movies for Junkies
         </Navbar.Brand>

@@ -1,8 +1,8 @@
-/* body {
-  background-image: url(../src/assets/189745955_l_normal_none.jpg);
-  background-size: cover;
-  background-attachment: fixed;  
-} */
+body{
+  /* display: flex; */
+  width: 100%;
+  margin: 0px;
+}
 
 .navbar a.active {
   color: rgb(74, 190, 219);   
@@ -47,7 +47,41 @@
 section {
   flex-wrap: wrap;
   align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+.allCenterfont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+}
+.backgroundForMovie{
+  background-color: #282c34;
+  padding-bottom: 10px;
+}
+
+.flexMovementHero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.heroBoxDotted{
+  border: dotted 10px rgb(196, 16, 16);
+  width: 900px;
+  margin: 3rem;
+  background-color: rgb(240, 248, 255, 50%);
+  border-radius: 50px;
+}
+
 .cardscontainer{
   display: flex;
   flex-direction: row;
@@ -86,12 +120,45 @@ align-items: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: left;
-  width: 650px;
-  height: 120px;
-  border-radius: 20px;
-  margin-bottom: 300px;
+  text-align: center;
+  width: 650px; 
+  border-radius: 20px;  
 }
+
+.navbarSearch {
+  background-color: #282c34;
+  /* background-image: url(../src/assets/189745955_l_normal_none.jpg); */
+  background-size: cover;
+  /* background-attachment: inherit; */
+  background-repeat: no-repeat; 
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 40px;  
+}
+.buttonupdate{
+  border-radius: 20%;
+  background-color: #7e828a;
+}
+
+.buttonPadding{
+  padding-top: 10px;
+}
+
+.search {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: aliceblue;
+}
+
+.searchbarwidth{
+  width: 400px;
+  margin-bottom: 30px;
+}
+
 
 .container{
   align-items: center;
@@ -117,34 +184,10 @@ align-items: center;
   padding: 0;
 }
 
-
-.navbarSearch {
-  background-color: #282c34;
-  background-image: url(../src/assets/189745955_l_normal_none.jpg);
-  background-size: cover;
-  background-attachment: inherit;
-  background-repeat: no-repeat; 
-  color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-  /* border-radius: 10px; */
-  padding: 20px;
-  height: 30rem;
-}
-
 .caroImageSearch {
   height: 400px;
   object-fit: cover;
   width: 100%;
-}
-
-.search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
 }
 
 input[type="text"] {

@@ -1,6 +1,6 @@
 import React from 'react'
-import SearchHero from '../Components/SearchHero'
-import MovieComponent from '../components/moviecompo'
+import SearchHero from '../components/SearchHero'
+import MovieComponent from '../components/Moviecompo'
 
 
 const SearchMovie = () => {

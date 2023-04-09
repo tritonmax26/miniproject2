@@ -7,20 +7,7 @@ function MovieComponent() {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const WebDescription = () => {
-    return (
-      <div>Welcome to our movie website, where you can immerse yourself in the world of film and entertainment. Our site offers an extensive collection of the latest movies, TV series, and documentaries, all available for streaming in high quality.
-  
-      Our movie website features a user-friendly interface that makes it easy to find the movie you're looking for. Whether you're in the mood for an action-packed blockbuster or a heartwarming romance, we have something for everyone. Our site also offers a comprehensive search function, so you can quickly find the perfect movie to suit your preferences.
-      
-      In addition to our diverse selection of films, our website provides a range of exclusive features that make us stand out from the competition. We offer personalized movie recommendations based on your viewing history, as well as user reviews and ratings to help you make an informed decision.
-      
-      Our website is optimized for all devices, so you can enjoy your favorite movies on your laptop, tablet, or smartphone, anytime and anywhere. We also offer a range of subscription options, including a free trial, so you can experience our site for yourself before committing to a full membership.
-      
-      At our movie website, we are committed to providing the ultimate viewing experience for our users. So why wait? Sign up today and start exploring our vast library of movies, TV series, and documentaries!</div>
-    )
-  }
-  
+ 
 
   const fetchData = async (searchText) => {
     setIsLoading(true);
