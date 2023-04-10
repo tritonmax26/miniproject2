@@ -188,6 +188,7 @@ align-items: center;
   height: 400px;
   object-fit: cover;
   width: 100%;
+  z-index: -999;
 }
 
 input[type="text"] {

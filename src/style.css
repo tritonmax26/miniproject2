@@ -1,0 +1,22 @@
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    font-size: 13px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 4px;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  #back-to-top-btn:hover {
+    opacity: 0.8;
+  }
+  
