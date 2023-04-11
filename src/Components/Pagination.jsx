@@ -3,52 +3,32 @@ import http from "../lib/http"
 import { Pagination } from 'react-bootstrap';
 
 
-const Pagination2 = () => {
-  const [pages, setPages] = useState([]) 
+const Pagination2 = ({ currentPage, onPageChange, totalPages }) => {
+  const [pageNumbers, setPageNumbers] = useState([]) 
 
-useEffect (() => {
-  async function getPages() {
-    const res = await http.get("/titles?page=")
-    setPages(res.data)
-    // console.log(res.data)
-    
-  }
-  getPages ()
-  
-  return  
-},[])
-
-
-
-let active = 2;
-let items = [pages.next];
-for (let number = 1; number <= 5; number++) {
-  items.push(
-    <Pagination.Item key={number} active={number === active}>
-      {number}
-    </Pagination.Item>,
-  );
-}
+  useEffect(() => {
+    let numbers = [];
+    for (let i = 1; i <= totalPages; i++) {
+      numbers.push(i);
+    }
+    setPageNumbers(numbers);
+  }, [totalPages]);
 
   return (
     <div>
-      <section>
-        <Pagination>
-               hello {items}
-        </Pagination>   
-      </section>      
+      <Pagination>
+        <Pagination.First disabled={currentPage === 1} onClick={() => onPageChange(1)} />
+        <Pagination.Prev disabled={currentPage === 1} onClick={() => onPageChange(currentPage - 1)} />
+        {pageNumbers.map(number => (
+          <Pagination.Item key={number} active={number === currentPage} onClick={() => onPageChange(number)}>
+            {number}
+          </Pagination.Item>
+        ))}
+        <Pagination.Next disabled={currentPage === totalPages} onClick={() => onPageChange(currentPage + 1)} />
+        <Pagination.Last disabled={currentPage === totalPages} onClick={() => onPageChange(totalPages)} />
+      </Pagination>
     </div>
   )
 }
 
-export default Pagination2
-
-      {/* {console.log(pages.next)} */}
-      {/* {pages.map ((items,index) =>{
-        return(
-          <Pagination key={index}>
-            {items.next}
-          </Pagination>   
-        )
-      })} */}
-
+export default Pagination2;

@@ -7,7 +7,6 @@ function MovieComponent() {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
- 
 
   const fetchData = async (searchText) => {
     setIsLoading(true);
@@ -49,7 +48,6 @@ function MovieComponent() {
         <div className='navbarmovie'>
           <div>
           <Navbar onSearch={handleSearch} />
-          <p></p>
           </div>
         <h2>Movie List</h2>
         </div>
@@ -66,7 +64,5 @@ function MovieComponent() {
     );
   }
   return <Navbar onSearch={handleSearch} />;
-
-  
 }
   export default MovieComponent

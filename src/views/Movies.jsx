@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import http from "../lib/http"
 import { Button , Card, Modal } from "react-bootstrap"
-import Pagination2 from "../components/Pagination"
+import MoviePagination from "../components/Pagination"
 import React from 'react';
 
 
@@ -72,9 +72,9 @@ return (
             })}
           </section>
           <div className="allCenterfont">
-            <Pagination2>
+            <MoviePagination>
 
-            </Pagination2>
+            </MoviePagination>
           </div>
       </div>  
     

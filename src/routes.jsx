@@ -1,5 +1,5 @@
 import Home from "./views/Home"
-import Movies from "./views/Movies"
+import Classic from "./views/Movies"
 import Contact from "./views/Contact"
 import SearchMovie from "./views/SearchMovie"
 
@@ -10,7 +10,7 @@ const routes = [
   },
   {
     path: "/movies",
-    element: <Movies />
+    element: <Classic />
   },
   {
     path: "/contact",

@@ -27,8 +27,8 @@ const Hero = () => {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          {/* <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -49,7 +49,7 @@ const Hero = () => {
     <div className='backgroundForMovie flexMovementHero'>
       <div className='heroBoxDotted'>
       <h1 className='pt-4'>Movies for Junkies </h1>
-      <p className='p-4'>Experience these great movies like never before. Enhance your movie watching experience with amazing movie 4k quality visuals. Stream through thousands of movies and shows for free. Download or stream as per your choice. We bring the best of cinema viewing experience to you. Watch 4K movies online free. Free download and streaming, No registration or charges. Watch movie 4k quality videos and audio. Get the best feel of 4K HDR quality visuals on your Tv or laptop.</p>
+      <p className='p-4'>Experience classic movies like never before with our amazing 4K quality visuals. Enhance your movie watching experience and enjoy timeless cinema with our extensive library of old Hollywood pictures, vintage cinema, and cult classics. Stream thousands of old movies and shows for free with no charges. Download or stream your favorites as per your choice and get the best feel of 4K HDR quality visuals on your TV or laptop.</p>
       </div>
     </div>
     </div>
