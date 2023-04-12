@@ -51,7 +51,7 @@ return (
                       <Modal show={show} onHide={handleClose}>
                         <Modal.Header closeButton>
                         <Modal.Title key={index1}>
-                          {title.id} 
+                          <h3>PLease, Sign in to view more</h3> 
                         </Modal.Title>
                         </Modal.Header>
                         <Modal.Body >
@@ -72,9 +72,9 @@ return (
             })}
           </section>
           <div className="allCenterfont">
-            <MoviePagination>
+            {/* <MoviePagination>
 
-            </MoviePagination>
+            </MoviePagination> */}
           </div>
       </div>  
     
